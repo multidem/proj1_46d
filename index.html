@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            height: 280px;
+            border: 1px solid blue;
+            margin: 15px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        img {
+            height: 250px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section id="box">
+        <!-- <div>
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        </div>
+
+        <div>
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        </div> -->
+    </section>
+
+    <script>
+
+    let n = +prompt("Сколько блоков?");
+
+let p = +prompt("Сколько картинок в каждом блоке (1-11)?");   
+
+let s = "";
+    if (p>=1 && p<=11) {
+  
+        for (i=1; i<=n; i++) {
+
+           s += "<div>"; 
+
+            for (j=1; j<=p; j++) {
+                s += `<img src="images/${j}.jpg">`;
+            }
+
+           s += "</div>";  
+
+        }
+
+        box.innerHTML = s;
+
+
+    } else {
+        alert("Неврное кол-во картинок");
+    }   
+
+
+    </script>
+
+
+</body>
+</html>

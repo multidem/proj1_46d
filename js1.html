@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td {
+            border: 1px solid black;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div id="box"></div>
+
+    <script>
+        let n = 1;
+    let tab = "<table><tbody>";
+
+       let col = +prompt("Сколько столбцов?");
+       
+       let row = +prompt("Сколько строк?");
+
+       for (i=1; i<=row; i++) {
+        tab += "<tr>"
+
+for (j=1; j<=col; j++) {
+tab += `<td>Ячейка ${n++}</td>`;  
+        }
+        tab += "</tr>";    
+
+       } 
+
+    tab += "</tbody></table>";
+    box.innerHTML = tab;
+    console.log(tab);
+</script>
+
+
+<!-- <table>
+    <tbody>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+        </tr>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+        </tr>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+        </tr>
+
+
+    </tbody>
+</table> -->
+
+
+
+</body>
+</html>
